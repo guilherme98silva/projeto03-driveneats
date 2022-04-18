@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
+
+
+/* Aplicado em tudo */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E5E5E5;
+}
+
+
+/* Título DrivenEats */
+header {
+  background: #CF2B2B;
+  color: white;
+  font-weight: 400;
+  position: fixed;
+  width: 100%; 
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header * {
+  margin-left: 18px;
+}
+
+header h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 44px;
+  padding-top: 8px;
+}
+
+header h4 {
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+
+/*  Produtos  */
+main {
+  margin: 100px 0;
+}
+
+section {
+  margin-bottom: 27px;
+}
+
+.container-produtos {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin-top: 17px;
+}
+
+section h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 26px;
+  margin-left: 16px;
+}
+
+.produto {
+  width: 172px;
+  height: 216px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: black;
+  font-size: 16px;
+  border-radius: 9px;
+  box-shadow: 0px 0px 10px -4px black;
+  margin-top: 17px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+  padding: 14px;
+  position: relative;
+}
+
+.produto * {
+  margin-bottom: 5px;
+}
+
+.produto img {
+  width: 144px;
+  height: 87px;
+  border-radius: 4px;
+}
+
+.produto strong {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+}
+
+.produto small {
+  font-weight: 300;
+  font-size: 15px;
+  color: #A6A6A6;
+}
+
+.produto p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.produto .check {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  font-size: 19px;
+  color: #32B72F;
+  display: none;
+}
+
+
+/* Produtos selecionados */
+.produto.selecionado .check {
+  display: block;
+}
+
+.selecionado {
+  border: 4px solid #32B72F;
+}
+
+
+
+/* -- Confirmacao pedido -- */
+.confirmacao {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 19px;
+  font-size: 22px;
+}
+
+.confirmacao-detalhes {
+  background-color: #50D074;
+  color: #FFF;
+  width: 377px;
+  height: 353px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 9px;
+}
+
+.confirmacao-detalhes * {
+  margin: 5px 26px;
+}
+
+.confirmacao-detalhes li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmacao-detalhes button {
+  border-radius: 100px;
+  padding: 5px 10px;
+  color: #50D074;
+  font-weight: 700;
+  width: 333px;
+  height: 50px;
+  font-size: 22px;
+  border: none;
+}
+
+.confirmacao-detalhes button:hover {
+  cursor: pointer;
+}
+
+.confirmacao .cancelar {
+  text-align: center;
+  cursor: pointer
+}
+
+
+/* Botão seleção de pedido */
+footer {
+  width: 100%;
+  height: 92px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer button {
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #CBCBCB;
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  width: 364px;
+  height: 61px;
+}
+
+.liberado {
+  background-color: #32B72F;
+  font-weight: 700;
+}
+
+.escondido {
+  display: none;
+}
