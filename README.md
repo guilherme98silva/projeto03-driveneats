@@ -7,8 +7,6 @@
 O objetivo é criar um site para mobile em que o usuário possa escolher 3 pratos de diferentes categorias. Ao clicar em finalizar o pedido, ele será levado a uma tela de revisão para conferir as informações, se estiver tudo certo será aberta uma página do WhatsApp com o número do restaurante.
 <br/>
 
-
-
 ## 🖥️ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
